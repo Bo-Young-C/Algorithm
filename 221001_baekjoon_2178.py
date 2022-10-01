@@ -7,7 +7,7 @@ def bfs(i, j):
     visited[0][0] = 1   # 시작 위치 방문 표시
     while q:
         i, j = q.pop(0)
-        # 도착했다면 방문한 
+        # 도착했다면 지나온 최소 칸 수 반환
         if i == N-1 and j == M-1:
             return visited[N-1][M-1]
         # 갈 수 있는 곳 탐색
